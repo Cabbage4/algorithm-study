@@ -1,9 +1,100 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36" version="29.3.6">
   <diagram name="Page-1" id="bWpzCkEIoc1r4WqARvhP">
-    <mxGraphModel>
+    <mxGraphModel dx="1776" dy="2315" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="uRxudKru0aDG0r39gENN-23" edge="1" parent="1" source="uRxudKru0aDG0r39gENN-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uRxudKru0aDG0r39gENN-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="260" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-24" connectable="0" parent="uRxudKru0aDG0r39gENN-23" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="本地任务无法获取，曾是从共享队列获取" vertex="1">
+          <mxGeometry relative="1" x="-0.4778" y="-2" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="共享队列（提交新任务）" vertex="1">
+          <mxGeometry height="30" width="210" x="130" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="偶数下标" vertex="1">
+          <mxGeometry height="30" width="210" x="130" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="奇数下标" vertex="1">
+          <mxGeometry height="30" width="250" x="340" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-25" edge="1" parent="1" source="uRxudKru0aDG0r39gENN-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="uRxudKru0aDG0r39gENN-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="610" y="105" />
+              <mxPoint x="610" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-26" connectable="0" parent="uRxudKru0aDG0r39gENN-25" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="本地任务可以获取" vertex="1">
+          <mxGeometry relative="1" x="-0.1262" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="私有队列（线程自身因拆解提交新任务）" vertex="1">
+          <mxGeometry height="30" width="250" x="340" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-6" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="工作队列" vertex="1">
+          <mxGeometry height="80" width="120" x="-30" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-7" parent="1" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" value="工作线程" vertex="1">
+          <mxGeometry height="80" width="120" x="-30" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-27" edge="1" parent="1" source="uRxudKru0aDG0r39gENN-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uRxudKru0aDG0r39gENN-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="start" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-30" edge="1" parent="1" source="uRxudKru0aDG0r39gENN-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uRxudKru0aDG0r39gENN-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="获取任务&lt;div&gt;（无法获取任务则直接结束，进入休眠）&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-29" edge="1" parent="1" source="uRxudKru0aDG0r39gENN-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="uRxudKru0aDG0r39gENN-3">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="440" />
+              <mxPoint x="700" y="68" />
+            </Array>
+            <mxPoint x="660" y="500" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-31" connectable="0" parent="uRxudKru0aDG0r39gENN-29" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="可以拆解，将任务提交到私有队列" vertex="1">
+          <mxGeometry relative="1" x="-0.0602" y="-1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-33" edge="1" parent="1" source="uRxudKru0aDG0r39gENN-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uRxudKru0aDG0r39gENN-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-28" parent="1" style="rhombus;whiteSpace=wrap;html=1;" value="任务是否可以拆解" vertex="1">
+          <mxGeometry height="80" width="80" x="430" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-38" edge="1" parent="1" source="uRxudKru0aDG0r39gENN-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="uRxudKru0aDG0r39gENN-18">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="550" />
+              <mxPoint x="340" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-39" connectable="0" parent="uRxudKru0aDG0r39gENN-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="重新获取任务" vertex="1">
+          <mxGeometry relative="1" x="0.0333" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="uRxudKru0aDG0r39gENN-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="执行任务" vertex="1">
+          <mxGeometry height="60" width="120" x="410" y="520" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
